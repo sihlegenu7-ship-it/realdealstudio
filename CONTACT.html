@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Real Deal Studios</title>
+  <meta name="description" content="Get in touch with Real Deal Studios. Tell us about your project and we'll build a website that truly represents your art. Based in South Africa."/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="STYLE.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <a href="INDEX.html" class="nav-logo">Real Deal <span>Studios</span></a>
+    <ul id="navMenu" role="list">
+      <li><a href="INDEX.html">Home</a></li>
+      <li><a href="ABOUT.html">About</a></li>
+      <li><a href="SERVICES.html">Services</a></li>
+      <li><a href="CONTACT.html" class="nav-cta" aria-current="page">Contact Us</a></li>
+      <li><a href="AUTH.html" class="nav-signout" id="signOutBtn" aria-label="Sign out of your account">Log Out</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero contact-hero" role="banner">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="page-hero-overlay" aria-hidden="true"></div>
+    <div class="section-label">Get in Touch</div>
+    <h1>Let's Build <em>Your Stage</em></h1>
+    <p>Tell us about your project and let's create something that truly represents your art.</p>
+  </div>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-inner">
+      <span>WEB DESIGN</span><span class="ticker-dot">✦</span>
+      <span>SEO OPTIMISATION</span><span class="ticker-dot">✦</span>
+      <span>DOMAIN &amp; HOSTING</span><span class="ticker-dot">✦</span>
+      <span>WEBSITE REDESIGNS</span><span class="ticker-dot">✦</span>
+      <span>MAINTENANCE &amp; UPDATES</span><span class="ticker-dot">✦</span>
+      <span>BRAND GROWTH</span><span class="ticker-dot">✦</span>
+      <span>WEB DESIGN</span><span class="ticker-dot">✦</span>
+      <span>SEO OPTIMISATION</span><span class="ticker-dot">✦</span>
+      <span>DOMAIN &amp; HOSTING</span><span class="ticker-dot">✦</span>
+      <span>WEBSITE REDESIGNS</span><span class="ticker-dot">✦</span>
+      <span>MAINTENANCE &amp; UPDATES</span><span class="ticker-dot">✦</span>
+      <span>BRAND GROWTH</span><span class="ticker-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section aria-labelledby="contact-heading" style="background:var(--black); border-top:1px solid var(--border);">
+    <div class="contact-grid">
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <div>
+          <div class="section-label">Contact Info</div>
+          <h2 id="contact-heading">Get in <span style="color:var(--orange)">Touch</span></h2>
+        </div>
+        <div class="contact-item">
+          <h4>Email</h4>
+          <p><a href="mailto:sihlegenu23@icloud.com">sihlegenu23@icloud.com</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>WhatsApp</h4>
+          <p>
+            <a href="https://wa.me/27732723384" target="_blank" rel="noopener noreferrer" class="whatsapp-link" aria-label="Chat with Real Deal Studios on WhatsApp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Chat with us on WhatsApp
+            </a>
+          </p>
+        </div>
+        <div class="contact-item">
+          <h4>Based In</h4>
+          <p>South Africa — Building Websites That Grow Businesses.</p>
+        </div>
+        <div class="contact-item">
+          <h4>Response Time</h4>
+          <p>We typically respond within 24 hours on weekdays.</p>
+        </div>
+        <div class="contact-item">
+          <h4>What to Include</h4>
+          <p>Tell us about your creative brand, the type of website you're looking for, and your estimated budget. The more details you provide, the better we can tailor a solution to your needs.</p>
+        </div>
+        <div style="margin-top:1rem;">
+          <div class="stat-box">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Professional websites for businesses of all sizes. Designed to help you grow and succeed online.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div>
+        <div class="section-label">Tell Us About Your Vision</div>
+        <form id="contactForm" class="contact-form" style="margin-top:1rem;" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Sipho Dlamini" required autocomplete="name"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"/>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option>Website Design &amp; Development</option>
+              <option>Redesign &amp; Upgrade</option>
+              <option>SEO Optimisation</option>
+              <option>Domain &amp; Hosting Setup</option>
+              <option>Maintenance &amp; Updates</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" placeholder="Describe your music/art, what you're looking for, your timeline and budget…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+            Send Message →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/27732723384" class="whatsapp-popup" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="INDEX.html" class="footer-logo">Real Deal <span>Studios</span></a>
+    <p>128 New Road, Midrand, Johannesburg</p>
+    <p>© 2026 Real Deal Studios. All rights reserved.</p>
+  </footer>
+
+  <script src="SCRIPT.js"></script>
+</body>
+</html>
